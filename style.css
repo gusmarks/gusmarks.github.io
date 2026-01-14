@@ -1,3 +1,4 @@
+/*stylizing for nav bar. gray background, and black lettering. dark gray hover with wither lettering. black for the active tab with white lettering*/
 ul {
 		list-style-type: none;
 		margin: 0;
@@ -5,74 +6,51 @@ ul {
 		overflow: hidden;
 		background-color: #99A1AF;
 		display: flex;
-	}
-	li a {
+}
+li a {/*set color and sizes for each nav bar option*/
 		text-align: center;
 		border-bottom: 1px solid #555555;
 		display: block;
 		color: black;
 		padding: 8px 16px;
 		text-decoration: none;
-	}
-
-/* Change the link and background color on hover */
-	li a:hover {
+}
+li.active a {
+    background-color: black; 
+    color: white; 
+}
+li a:hover {
 		background-color: #555555;
 		color: white;
-	}
-    body {
-		background-color: powderblue;
-    }
-    h1 {
-		background-color: green;
-    } 
-	div{
-		word-wrap: normal;
-		width:1000px;
-		
-		margin:auto;
-	}
-	.skillholder{
-		display:flex;
-	}
-	.project_container{
-		display:flex;
-	}
-	
-	p{
-		word-wrap: normal
-	}
-	
-	/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+/*main body of each bacge is a light blue background*/
+body {
+	background-color: #b8dbd9;
 }
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
+h1.header {
+	background-color: #586f7c;
+} 
+div.atrib_container{
+	word-wrap: normal;
+	display:flex;
+	display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap;
 }
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+p{
+	word-wrap: normal
+}
+.atrib_block{
+margin :5px;
+background-color: #586f7c;
+justify-content: center;
+text-align: center;
+width:15vw;
+	margin-left: auto; /* Centers horizontally */
+margin-right: auto;/* Centers horizontally */
+}
+.center-img{
+display: block;
+margin-left: auto; /* Centers horizontally */
+margin-right: auto;/* Centers horizontally */
+width: 40%;  
 }
